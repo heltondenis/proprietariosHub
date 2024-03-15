@@ -4,14 +4,12 @@ import { Router } from '@angular/router'; // Correção: importe Router de @angu
 import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { NzTableModule } from 'ng-zorro-antd/table';
 
-
 interface Person {
   key: string;
   name: string;
   age: number;
   address: string;
 }
-
 
 @Component({
   selector: 'app-imoveis',
@@ -33,7 +31,8 @@ export class ImoveisComponent implements OnInit {
 
 dataSet = [
   { name: 'John Doe', age: 30, address: 'New York No. 1 Lake Park' },
-  // Mais dados...
+  { name: 'John Doe', age: 30, address: 'New York No. 1 Lake Park' },
+  { name: 'John Doe', age: 30, address: 'New York No. 1 Lake Park' }
 ];
 
 }
